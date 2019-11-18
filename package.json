@@ -45,6 +45,7 @@
     "bundle": "./node_modules/.bin/webpack",
     "production": "./node_modules/.bin/webpack -p",
     "watch": "gulp",
+    "serve": "gulp serve",
     "sass": "gulp styles",
     "js": "gulp webpack"
   },

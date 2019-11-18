@@ -14,6 +14,13 @@ gulp.task('default', ['styles', 'webpack', 'browser-sync'], () => {
   gulp.watch(['./public/**/*', './public/*', '!public/js/**/.#*js', '!public/css/**/.#*css']).on('change', reload)
 })
 
+gulp.task('serve', ['styles', 'webpack'], () => {
+  browserSync.init({
+    serveStatic: ['.', './public']
+});
+  
+})
+
 gulp.task('styles', () => {
   gulp.src('assets/sass/**/*.scss')
     .pipe(
