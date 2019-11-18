@@ -17,6 +17,8 @@ gulp.task('default', ['styles', 'webpack', 'browser-sync'], () => {
 gulp.task('serve', ['styles', 'webpack'], () => {
   browserSync.init({
     serveStatic: ['.', './public']
+    host: "pokemon-game86.herokuapp.com",
+    port: 443
 });
   
 })
