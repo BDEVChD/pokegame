@@ -6,6 +6,9 @@
   "author": "joe santos garcia",
   "license": "MIT",
   "homepage": "http://rocky.codingphase.com/",
+  "engines": {
+    "node": "10.15.3"
+  },
   "dependencies": {
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
